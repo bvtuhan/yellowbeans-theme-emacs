@@ -5,10 +5,11 @@
 ;;
 ;; Author: bvtuhan <jjackson.stormm@gmail.com>
 ;; Maintainer: bvtuhan <jjackson.stormm@gmail.com>
-;; Version: 0.0.1
+;; Version: 0.0.2
 ;; Keywords: theme, dark, yellow, simple
 ;; Homepage: https://github.com/bvtuhan/yellowbeans-theme-emacs
-;; Package-Requires: ((emacs "24.3"))
+;; Package-Requires: ((emacs "29.1"))
+;; SPDX-License-Identifier: MIT
 ;;
 ;; This file is not part of GNU Emacs.
 ;;
@@ -178,14 +179,10 @@
    `(markdown-link-face ((t (:foreground ,yellowbeans-olive-green))))
    `(markdown-url-face ((t (:foreground ,yellowbeans-shipcove-blue))))))
 
-;; autoload is copied from https://github.com/ogdenwebb/emacs-kaolin-themes/blob/main/kaolin-themes.el
 ;;;###autoload
-(when (and (boundp 'custom-theme-load-path) load-file-name)
-  (let* ((base (file-name-directory load-file-name))
-         (dir (expand-file-name "themes/" base)))
-    (add-to-list 'custom-theme-load-path
-                 (or (and (file-directory-p dir) dir)
-                     base))))
+(when load-file-name
+  (add-to-list 'custom-theme-load-path
+               (file-name-directory load-file-name)))
 
 (provide-theme 'yellowbeans)
 ;;; yellowbeans-theme.el ends here
