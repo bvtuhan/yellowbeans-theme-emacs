@@ -38,7 +38,7 @@
 ;;  Simple color theme featuring a dark background with yellow accents.
 ;;  Originally created by 'gremble0' as a Neovim color scheme, adapted
 ;;  for Emacs. Currently includes core Emacs faces, syntax highlighting,
-;;  org-mode, markdown-mode (more in future hopefully). Contributions 
+;;  org-mode, markdown-mode (more in future hopefully). Contributions
 ;;  are welcome.
 ;;
 ;;; Code:
@@ -99,9 +99,12 @@
    `(fringe ((t (:background ,yellowbeans-bg :foreground ,yellowbeans-gray-2))))
 
    ;; syntax highlighting
+   `(font-lock-builtin-face ((t (:foreground ,yellowbeans-fg :weight bold))))
    `(font-lock-comment-face ((t (:foreground ,yellowbeans-gray-2 :slant italic))))
+   `(font-lock-comment-delimiter-face ((t (:foreground ,yellowbeans-gray-2 :slant italic))))
    `(font-lock-string-face ((t (:foreground ,yellowbeans-olive-green))))
    `(font-lock-doc-face ((t (:foreground ,yellowbeans-gray-2 :slant italic))))
+   `(font-lock-doc-markup-face ((t (:foreground ,yellowbeans-gray-2 :slant italic))))
    `(font-lock-keyword-face ((t (:foreground ,yellowbeans-gold-yellow :weight bold))))
    `(font-lock-function-name-face ((t (:foreground ,yellowbeans-perano-blue))))
    `(font-lock-variable-name-face ((t (:foreground ,yellowbeans-lavender-purple))))
@@ -109,9 +112,9 @@
    `(font-lock-constant-face ((t (:foreground ,yellowbeans-moss-green))))
    `(font-lock-builtin-face ((t (:foreground ,yellowbeans-sky-blue))))
    `(font-lock-preprocessor-face ((t (:foreground ,yellowbeans-moss-green))))
-   `(warning ((t (:foreground ,yellowbeans-neutral))))
-   `(error ((t (:foreground ,yellowbeans-bad))))
-   `(success ((t (:foreground ,yellowbeans-good))))
+   `(font-lock-preprocessor-face ((t (:foreground ,yellowbeans-moss-green))))
+   `(font-lock-warning-face ((t (:foreground ,yellowbeans-neutral))))
+   `(font-lock-negation-char-face ((t (:foreground ,yellowbeans-gold-yellow :weight bold))))
 
    ;; flymake copied from https://github.com/rexim/gruber-darker-theme/blob/master/gruber-darker-theme.el
    `(flymake-errline
@@ -162,6 +165,12 @@
    `(org-block-begin-line ((t (:foreground ,yellowbeans-gray-2 :slant italic))))
    `(org-block-end-line ((t (:foreground ,yellowbeans-gray-2 :slant italic))))
    `(org-link ((t (:foreground ,yellowbeans-olive-green :underline t))))
+   `(org-scheduled ((t (:foreground ,yellowbeans-moss-green))))
+   `(org-special-keyword ((t (:inherit font-lock-comment-face))))
+   `(org-table ((t (:foreground ,yellowbeans-olive-green))))
+   `(org-tag ((t (:weight bold :weight bold))))
+   `(org-time-grid ((t (:foreground ,yellowbeans-moss-green))))
+   `(org-upcoming-deadline ((t (:inherit font-lock-keyword-face))))
    
    ;; markdown
    `(markdown-header-face ((t (:foreground ,yellowbeans-gold-yellow :weight bold))))
