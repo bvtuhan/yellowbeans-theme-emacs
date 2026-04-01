@@ -27,3 +27,13 @@ cp yellowbeans-theme-emacs/yellowbeans-theme.el ~/.config/doom/themes/
 ```el
 (setq doom-theme 'yellowbeans)
 ```
+
+## Acknowledgments
+
+For modeling and styling, I used different themes as references, including:
+
+- [gruber-darker](https://github.com/rexim/gruber-darker-theme/blob/master/gruber-darker-theme.el)
+- [Zenburn](https://github.com/bbatsov/zenburn-emacs/blob/master/zenburn-theme.el)
+- [poet](https://github.com/kunalb/poet/blob/master/poet-dark-theme.el)
+- [kaolin](https://github.com/ogdenwebb/emacs-kaolin-themes)
+
