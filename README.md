@@ -2,8 +2,8 @@
 
 `Yellowbeans` color theme originally created by [gremble0](https://github.com/gremble0/yellowbeans.nvim) ported to Emacs.
 
-![rust-visual](./screenshot.png)
-![org-mode-with-org-fragotg](./screenshot_org.png)
+![rust-visual](./screenshots/screenshot.png)
+![org-mode-with-org-fragotg](./screenshots/screenshot_org.png)
 
 ## Installation
 

@@ -5,7 +5,7 @@
 ;;
 ;; Author: bvtuhan <jjackson.stormm@gmail.com>
 ;; Maintainer: bvtuhan <jjackson.stormm@gmail.com>
-;; Version: 0.0.2
+;; Version: 0.0.3
 ;; Keywords: theme, dark, yellow, simple
 ;; Homepage: https://github.com/bvtuhan/yellowbeans-theme-emacs
 ;; Package-Requires: ((emacs "29.1"))
@@ -104,7 +104,7 @@
    `(tooltip ((t (:foreground ,yellowbeans-fg :background ,yellowbeans-black-4))))
 
    ;; syntax highlighting
-   `(font-lock-builtin-face ((t (:foreground ,yellowbeans-fg :weight bold))))
+   `(font-lock-builtin-face ((t (:foreground ,yellowbeans-gold-yellow :weight bold))))
    `(font-lock-comment-face ((t (:foreground ,yellowbeans-gray-2 :slant italic))))
    `(font-lock-comment-delimiter-face ((t (:foreground ,yellowbeans-gray-2 :slant italic))))
    `(font-lock-string-face ((t (:foreground ,yellowbeans-olive-green))))
@@ -118,30 +118,19 @@
    `(font-lock-preprocessor-face ((t (:foreground ,yellowbeans-moss-green))))
    `(font-lock-warning-face ((t (:foreground ,yellowbeans-neutral))))
    `(font-lock-negation-char-face ((t (:foreground ,yellowbeans-gold-yellow :weight bold))))
-
-   ;; tree-sitter
-   `(treesit-font-lock-comment-face ((t (:inherit font-lock-comment-face))))
-   `(treesit-font-lock-string-face ((t (:inherit font-lock-string-face))))
-   `(treesit-font-lock-doc-face ((t (:inherit font-lock-doc-face))))
-   `(treesit-font-lock-keyword-face ((t (:inherit font-lock-keyword-face))))
-   `(treesit-font-lock-builtin-face ((t (:inherit font-lock-builtin-face))))
-   `(treesit-font-lock-function-face ((t (:foreground ,yellowbeans-perano-blue))))
-   `(treesit-font-lock-function-call-face ((t (:foreground ,yellowbeans-perano-blue))))
-   `(treesit-font-lock-variable-face ((t (:foreground ,yellowbeans-lavender-purple))))
-   `(treesit-font-lock-variable-name-face ((t (:foreground ,yellowbeans-lavender-purple))))
-   `(treesit-font-lock-type-face ((t (:foreground ,yellowbeans-shipcove-blue))))
-   `(treesit-font-lock-constant-face ((t (:foreground ,yellowbeans-moss-green))))
-   `(treesit-font-lock-number-face ((t (:foreground ,yellowbeans-moss-green))))
-   `(treesit-font-lock-operator-face ((t (:foreground ,yellowbeans-gold-yellow))))
-   `(treesit-font-lock-property-face ((t (:foreground ,yellowbeans-morningglory-blue))))
-   `(treesit-font-lock-bracket-face ((t (:foreground ,yellowbeans-white-2))))
-   `(treesit-font-lock-delimiter-face ((t (:foreground ,yellowbeans-white-2))))
-   `(treesit-font-lock-punctuation-face ((t (:foreground ,yellowbeans-white-2))))
-   `(treesit-font-lock-escape-face ((t (:foreground ,yellowbeans-neutral :weight bold))))
-   `(treesit-font-lock-regexp-face ((t (:foreground ,yellowbeans-olive-green))))
-   `(treesit-font-lock-label-face ((t (:foreground ,yellowbeans-neutral))))
-   `(treesit-font-lock-attribute-face ((t (:foreground ,yellowbeans-olive-green))))
-   `(treesit-font-lock-tag-face ((t (:foreground ,yellowbeans-gold-yellow))))
+   `(font-lock-function-call-face ((t (:inherit font-lock-function-name-face))))
+   `(font-lock-number-face ((t (:inherit font-lock-constant-face))))
+   `(font-lock-operator-face ((t (:inherit font-lock-keyword-face))))
+   `(font-lock-property-name-face ((t (:foreground ,yellowbeans-dove-blue))))
+   `(font-lock-property-use-face ((t (:foreground ,yellowbeans-dove-blue))))
+   `(font-lock-bracket-face ((t (:foreground ,yellowbeans-hoki-blue))))
+   `(font-lock-delimiter-face ((t (:foreground ,yellowbeans-hoki-blue))))
+   `(font-lock-punctuation-face ((t (:foreground ,yellowbeans-white-2))))
+   `(font-lock-escape-face ((t (:foreground ,yellowbeans-neutral :weight bold))))
+   `(font-lock-regexp-face ((t (:inherit font-lock-string-face))))
+   `(font-lock-label-face ((t (:foreground ,yellowbeans-neutral))))
+   `(font-lock-macro-name-face ((t (:foreground ,yellowbeans-shipcove-blue))))
+   `(font-lock-preprocessor-face ((t (:foreground ,yellowbeans-shipcove-blue))))
 
    ;; compilation
    `(compilation-column-face ((t (:foreground ,yellowbeans-gold-yellow))))
@@ -168,10 +157,10 @@
    `(completions-highlight ((t (:background ,yellowbeans-black-2))))
 
    ;; eglot
-   `(eglot-highlight-symbol-face ((t (:background ,yellowbeans-good-bg :weight bold))))
-   `(eglot-diagnostic-tag-unnecessary-face ((t (:foreground ,yellowbeans-neutral :underline (:style wave :color ,yellowbeans-bg)))))
-   `(eglot-diagnostic-tag-deprecated-face ((t (:foreground ,yellowbeans-neutral :strike-through ,yellowbeans-bg))))
-   `(eglot-inlay-hint-face ((t (:foreground ,yellowbeans-gray-3 :height 0.9))))
+   `(eglot-highlight-symbol-face
+     ((t (:inherit font-lock-variable-name-face :weight bold))))
+   `(eglot-mode-line
+     ((t (:inherit font-lock-constant-face :weight bold))))
 
    ;; flymake
    `(flymake-error ((t (:underline (:color ,yellowbeans-bad :style wave)))))
