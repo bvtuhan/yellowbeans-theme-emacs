@@ -77,11 +77,26 @@
       (yellowbeans-good-bg "#2e3127"))
 
   ;; background hard code
-  (custom-theme-set-variables 'yellowbeans '(frame-background-mode 'dark))
+  (custom-theme-set-variables
+   'yellowbeans
+   '(frame-background-mode 'dark)
+   `(hl-todo-keyword-faces
+     '(("TODO"  . ,yellowbeans-gold-yellow)
+       ("FIXME" . ,yellowbeans-bad)
+       ("BUG"   . ,yellowbeans-bad)
+       ("HACK"  . ,yellowbeans-neutral)
+       ("WARN"  . ,yellowbeans-neutral)
+       ("NOTE"  . ,yellowbeans-morningglory-blue)
+       ("INFO"  . ,yellowbeans-shipcove-blue)
+       ("REVIEW" . ,yellowbeans-lavender-purple)
+       ("DEPRECATED" . ,yellowbeans-gray-3))))
 
   ;; styling
   (custom-theme-set-faces
    'yellowbeans
+
+   ;; hl-todo
+   `(hl-todo ((t (:weight bold))))
 
    ;; core faces
    `(default ((t (:foreground ,yellowbeans-fg :background ,yellowbeans-bg)))) ;; normal text and the background
