@@ -146,6 +146,11 @@
    `(font-lock-label-face ((t (:foreground ,yellowbeans-neutral))))
    `(font-lock-macro-name-face ((t (:foreground ,yellowbeans-shipcove-blue))))
    `(font-lock-preprocessor-face ((t (:foreground ,yellowbeans-shipcove-blue))))
+    `(font-lock-variable-use-face ((t (:foreground ,yellowbeans-lavender-purple))))
+    `(font-lock-misc-punctuation-face ((t (:foreground ,yellowbeans-white-2))))
+    `(escape-glyph ((t (:foreground ,yellowbeans-neutral :weight bold))))
+    `(homoglyph ((t (:foreground ,yellowbeans-neutral :weight bold))))
+    `(error ((t (:foreground ,yellowbeans-bad :weight bold))))
 
    ;; compilation
    `(compilation-column-face ((t (:foreground ,yellowbeans-gold-yellow))))
