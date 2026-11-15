@@ -44,7 +44,7 @@
 ;;; Code:
 
 (deftheme yellowbeans
-  "An Emacs port of gramble0's Yellowbeans theme.")
+  "Emacs port of gramble0's Yellowbeans theme.")
 
 ;; define color palette
 (let ((yellowbeans-bg "#151515")
@@ -183,6 +183,16 @@
      ((t (:inherit font-lock-variable-name-face :weight bold))))
    `(eglot-mode-line
      ((t (:inherit font-lock-constant-face :weight bold))))
+   `(eglot-semantic-function
+     ((t (:inherit font-lock-function-name-face))))
+   `(eglot-semantic-method
+     ((t (:inherit font-lock-function-name-face))))
+   `(eglot-semantic-variable
+     ((t (:inherit font-lock-variable-name-face))))
+   `(eglot-semantic-parameter
+     ((t (:inherit font-lock-variable-name-face))))
+   `(eglot-semantic-type
+     ((t (:inherit font-lock-type-face))))
 
    ;; flymake
    `(flymake-error ((t (:underline (:color ,yellowbeans-bad :style wave)))))
@@ -313,7 +323,7 @@
    `(doom-modeline-battery-error ((t (:foreground ,yellowbeans-bad :weight bold))))
    `(doom-modeline-time ((t (:foreground ,yellowbeans-gray-3))))
    `(doom-modeline-compilation ((t (:foreground ,yellowbeans-neutral :weight bold))))
-   
+
    ;; markdown
    `(markdown-header-face ((t (:foreground ,yellowbeans-gold-yellow :weight bold))))
    `(markdown-header-face-1 ((t (:inherit markdown-header-face :height 1.2))))
