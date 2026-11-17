@@ -193,6 +193,8 @@
      ((t (:inherit font-lock-variable-name-face))))
    `(eglot-semantic-type
      ((t (:inherit font-lock-type-face))))
+   `(eglot-semantic-defaultLibrary
+     ((t (:inherit font-lock-function-name-face))))
 
    ;; flymake
    `(flymake-error ((t (:underline (:color ,yellowbeans-bad :style wave)))))
