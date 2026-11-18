@@ -144,7 +144,7 @@
    `(font-lock-regexp-face ((t (:inherit font-lock-string-face))))
    `(font-lock-label-face ((t (:foreground ,yellowbeans-neutral))))
    `(font-lock-macro-name-face ((t (:foreground ,yellowbeans-shipcove-blue))))
-   `(font-lock-preprocessor-face ((t (:foreground ,yellowbeans-shipcove-blue))))
+   `(font-lock-preprocessor-face ((t (:foreground ,yellowbeans-moss-green))))
    `(font-lock-regexp-grouping-backslash ((t (:foreground ,yellowbeans-dark-yellow))))
    `(font-lock-regexp-grouping-construct ((t (:foreground ,yellowbeans-gold-yellow :weight bold))))
    `(font-lock-variable-use-face ((t (:foreground ,yellowbeans-lavender-purple))))
