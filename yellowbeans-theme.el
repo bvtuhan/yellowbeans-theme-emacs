@@ -64,6 +64,7 @@
       (yellowbeans-moss-green "#7c9081")
       (yellowbeans-morningglory-blue "#8fbfdc")
       (yellowbeans-shipcove-blue "#8197bf")
+      (yellowbeans-shipcove-blue-tint "#5b6a84")
       (yellowbeans-sky-blue "#7187bf")
       (yellowbeans-perano-blue "#b0d0f0")
       (yellowbeans-hoki-blue "#526779")
