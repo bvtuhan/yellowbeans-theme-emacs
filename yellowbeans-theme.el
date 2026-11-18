@@ -143,7 +143,6 @@
    `(font-lock-escape-face ((t (:foreground ,yellowbeans-neutral :weight bold))))
    `(font-lock-regexp-face ((t (:inherit font-lock-string-face))))
    `(font-lock-label-face ((t (:foreground ,yellowbeans-neutral))))
-   `(font-lock-macro-name-face ((t (:foreground ,yellowbeans-shipcove-blue))))
    `(font-lock-preprocessor-face ((t (:foreground ,yellowbeans-moss-green))))
    `(font-lock-regexp-grouping-backslash ((t (:foreground ,yellowbeans-dark-yellow))))
    `(font-lock-regexp-grouping-construct ((t (:foreground ,yellowbeans-gold-yellow :weight bold))))
@@ -179,7 +178,7 @@
 
    ;; eglot
    `(eglot-highlight-symbol-face
-     ((t (:inherit font-lock-variable-name-face :weight bold))))
+     ((t (:background ,yellowbeans-black-4))))
    `(eglot-mode-line
      ((t (:inherit font-lock-constant-face :weight bold))))
    `(eglot-semantic-namespace
@@ -211,7 +210,7 @@
    `(eglot-semantic-method
      ((t (:inherit font-lock-function-name-face))))
    `(eglot-semantic-macro
-     ((t (:inherit font-lock-macro-name-face))))
+     ((t (:inherit font-lock-preprocessor-face))))
    `(eglot-semantic-keyword
      ((t (:inherit font-lock-keyword-face))))
    `(eglot-semantic-modifier
@@ -235,6 +234,8 @@
    `(eglot-semantic-documentation
      ((t (:slant italic))))
    `(eglot-semantic-defaultLibrary
+     ((t (:weight normal))))
+   `(eglot-semantic-declaration
      ((t (:weight normal))))
 
    ;; flymake
