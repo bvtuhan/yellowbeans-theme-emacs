@@ -235,7 +235,7 @@
    `(eglot-semantic-documentation
      ((t (:slant italic))))
    `(eglot-semantic-defaultLibrary
-     ((t (:inherit font-lock-function-name-face))))
+     ((t (:weight normal))))
 
    ;; flymake
    `(flymake-error ((t (:underline (:color ,yellowbeans-bad :style wave)))))
