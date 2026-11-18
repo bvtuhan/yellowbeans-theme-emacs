@@ -5,10 +5,10 @@
 ;;
 ;; Author: bvtuhan <jjackson.stormm@gmail.com>
 ;; Maintainer: bvtuhan <jjackson.stormm@gmail.com>
-;; Version: 0.0.3
+;; Version: 0.0.4
 ;; Keywords: theme, dark, yellow, simple
 ;; Homepage: https://github.com/bvtuhan/yellowbeans-theme-emacs
-;; Package-Requires: ((emacs "29.1"))
+;; Package-Requires: ((emacs "31.1"))
 ;; SPDX-License-Identifier: MIT
 ;;
 ;; This file is not part of GNU Emacs.
@@ -130,7 +130,6 @@
    `(font-lock-variable-name-face ((t (:foreground ,yellowbeans-lavender-purple))))
    `(font-lock-type-face ((t (:foreground ,yellowbeans-shipcove-blue))))
    `(font-lock-constant-face ((t (:foreground ,yellowbeans-moss-green))))
-   `(font-lock-preprocessor-face ((t (:foreground ,yellowbeans-moss-green))))
    `(font-lock-warning-face ((t (:foreground ,yellowbeans-neutral))))
    `(font-lock-negation-char-face ((t (:foreground ,yellowbeans-gold-yellow :weight bold))))
    `(font-lock-function-call-face ((t (:inherit font-lock-function-name-face))))
@@ -183,16 +182,58 @@
      ((t (:inherit font-lock-variable-name-face :weight bold))))
    `(eglot-mode-line
      ((t (:inherit font-lock-constant-face :weight bold))))
+   `(eglot-semantic-namespace
+     ((t (:inherit font-lock-type-face))))
+   `(eglot-semantic-type
+     ((t (:inherit font-lock-type-face))))
+   `(eglot-semantic-class
+     ((t (:inherit font-lock-type-face))))
+   `(eglot-semantic-enum
+     ((t (:inherit font-lock-type-face))))
+   `(eglot-semantic-interface
+     ((t (:inherit font-lock-type-face))))
+   `(eglot-semantic-struct
+     ((t (:inherit font-lock-type-face))))
+   `(eglot-semantic-typeParameter
+     ((t (:inherit font-lock-type-face))))
+   `(eglot-semantic-parameter
+     ((t (:inherit font-lock-variable-name-face))))
+   `(eglot-semantic-variable
+     ((t (:inherit font-lock-variable-name-face))))
+   `(eglot-semantic-property
+     ((t (:inherit font-lock-property-use-face))))
+   `(eglot-semantic-enumMember
+     ((t (:inherit font-lock-constant-face))))
+   `(eglot-semantic-event
+     ((t (:inherit font-lock-variable-name-face))))
    `(eglot-semantic-function
      ((t (:inherit font-lock-function-name-face))))
    `(eglot-semantic-method
      ((t (:inherit font-lock-function-name-face))))
-   `(eglot-semantic-variable
-     ((t (:inherit font-lock-variable-name-face))))
-   `(eglot-semantic-parameter
-     ((t (:inherit font-lock-variable-name-face))))
-   `(eglot-semantic-type
-     ((t (:inherit font-lock-type-face))))
+   `(eglot-semantic-macro
+     ((t (:inherit font-lock-macro-name-face))))
+   `(eglot-semantic-keyword
+     ((t (:inherit font-lock-keyword-face))))
+   `(eglot-semantic-modifier
+     ((t (:inherit font-lock-keyword-face))))
+   `(eglot-semantic-comment
+     ((t (:inherit font-lock-comment-face))))
+   `(eglot-semantic-string
+     ((t (:inherit font-lock-string-face))))
+   `(eglot-semantic-number
+     ((t (:inherit font-lock-number-face))))
+   `(eglot-semantic-regexp
+     ((t (:inherit font-lock-regexp-face))))
+   `(eglot-semantic-operator
+     ((t (:inherit font-lock-operator-face))))
+   `(eglot-semantic-decorator
+     ((t (:inherit font-lock-preprocessor-face))))
+   `(eglot-semantic-deprecated
+     ((t (:strike-through t))))
+   `(eglot-semantic-abstract
+     ((t (:slant italic))))
+   `(eglot-semantic-documentation
+     ((t (:slant italic))))
    `(eglot-semantic-defaultLibrary
      ((t (:inherit font-lock-function-name-face))))
 
