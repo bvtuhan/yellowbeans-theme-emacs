@@ -69,11 +69,11 @@
       (yellowbeans-hoki-blue "#526779")
       (yellowbeans-dove-blue "#a9b1d6")
       (yellowbeans-lavender-purple "#b6a6ff")
-      (yellowbeans-bad "#f22b2b")
+      (yellowbeans-bad "#e94430")
       (yellowbeans-bad-bg "#503030")
-      (yellowbeans-neutral "#ffa500")
+      (yellowbeans-neutral "#e09121")
       (yellowbeans-neutral-bg "#6B572A")
-      (yellowbeans-good "#b3e27c")
+      (yellowbeans-good "#b4cf69")
       (yellowbeans-good-bg "#2e3127"))
 
   ;; background hard code
@@ -137,12 +137,17 @@
    `(font-lock-operator-face ((t (:inherit font-lock-keyword-face))))
    `(font-lock-property-name-face ((t (:foreground ,yellowbeans-dove-blue))))
    `(font-lock-property-use-face ((t (:foreground ,yellowbeans-dove-blue))))
-   `(font-lock-bracket-face ((t (:foreground ,yellowbeans-hoki-blue))))
-   `(font-lock-delimiter-face ((t (:foreground ,yellowbeans-hoki-blue))))
+   `(font-lock-bracket-face
+     ((t (:foreground ,yellowbeans-shipcove-blue-tint))))
+   `(font-lock-delimiter-face
+     ((t (:foreground ,yellowbeans-shipcove-blue-tint))))
    `(font-lock-punctuation-face ((t (:foreground ,yellowbeans-white-2))))
-   `(font-lock-escape-face ((t (:foreground ,yellowbeans-neutral :weight bold))))
-   `(font-lock-regexp-face ((t (:inherit font-lock-string-face))))
-   `(font-lock-label-face ((t (:foreground ,yellowbeans-neutral))))
+   `(font-lock-escape-face
+     ((t (:foreground ,yellowbeans-shipcove-blue))))
+   `(font-lock-regexp-face
+     ((t (:foreground ,yellowbeans-shipcove-blue))))
+   `(font-lock-label-face
+     ((t (:foreground ,yellowbeans-gold-yellow))))
    `(font-lock-preprocessor-face ((t (:foreground ,yellowbeans-moss-green))))
    `(font-lock-regexp-grouping-backslash ((t (:foreground ,yellowbeans-dark-yellow))))
    `(font-lock-regexp-grouping-construct ((t (:foreground ,yellowbeans-gold-yellow :weight bold))))
